@@ -14,7 +14,7 @@ public class App {
         DB db = mongo.getDB("kf");
         DBCollection collection = db.getCollection("xx");
         BasicDBObject obj = new BasicDBObject();
-        obj.put("name", "ÕÔ¹úê»");
+        obj.put("name", "somebody");
         DBCursor cursor = collection.find(obj);
         while (cursor.hasNext()) {
             System.out.println(cursor.next().toString());
